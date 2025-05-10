@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Find Lost Item</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- MainActivity -->
+    <string name="welcome">Welcome</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    
+    <!-- Bottom Navigation -->
+    <string name="menu_lost_items">Lost Items</string>
+    <string name="menu_create_ad">Create Advertisement</string>
+    <string name="menu_messages">Messages</string>
+    <string name="menu_my_ads">My Advertisements</string>
+    <string name="menu_profile">Profile</string>
+    
+    <!-- Toolbar Titles -->
+    <string name="toolbar_lost_items">Lost Items</string>
+    <string name="toolbar_item_detail">Item Detail</string>
+    <string name="toolbar_create_ad">Create Ad</string>
+    <string name="toolbar_my_ads">My Ads</string>
+    <string name="toolbar_profile">Profile</string>
+    <string name="toolbar_messages">Messages</string>
+    <string name="toolbar_my_app">My App</string>
+
+    
+    <!-- Other -->
+    <string name="app_description">Find your lost items or help others find their belongings</string>
+    <string name="chats_2">Chats</string>
+    <string name="exit_2">Exit</string>
+    <string name="messages_2">Messages</string>
+    <string name="write_message">Write Message...</string>
+    <string name="selected_address_2">Selected Address</string>
+    <string name="item_title_3">Item Title</string>
+    <string name="description_2">Description</string>
+    <string name="post_ad_2">Post Ad</string>
+    <string name="login_2">Login</string>
+    <string name="email_5">Email</string>
+    <string name="password_3">Password</string>
+    <string name="login_3">Login</string>
+    <string name="lost_item_title_2">Lost Item Title</string>
+    <string name="address_3">Address</string>
+    <string name="email_6">Email:</string>
+    <string name="harita_y_klenemedi_adres_bulunamad">Mapp Not Loading: Address Not Found.</string>
+    <string name="not_found_item">Lost Item Not Found.</string>
+    <string name="app_logo">App Logo</string>
+    <string name="not_create_ad">Not Yet Create Ad</string>
+    <string name="profil">Profile</string>
+    <string name="email_7">Email:</string>
+    <string name="loading_2">Loading...</string>
+    <string name="username_3">Username: </string>
+    <string name="loading_3">Loading...</string>
+    <string name="active_ads_2">Active Ads:</string>
+    <string name="loading_4">Loading...</string>
+    <string name="register_3">Register</string>
+    <string name="username_4">Username</string>
+    <string name="email_8">Email</string>
+    <string name="password_4">Password</string>
+    <string name="register_4">Register</string>
+    <string name="item_title_4">Item Title</string>
+    <string name="address_4">Address</string>
+    <string name="toolbar_title_messages">Messages</string>
+    <string name="search_icon">Arama ikonu</string>
+</resources>

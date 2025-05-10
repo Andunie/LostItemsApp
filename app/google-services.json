@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "50724063741",
+    "project_id": "findapp-cd740",
+    "storage_bucket": "findapp-cd740.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50724063741:android:2ec9ceb877583f54d9b194",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNAMJPnj_yrtqpRyY-eOyvLVXXkoBZhE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

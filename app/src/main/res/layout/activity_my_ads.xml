@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fitsSystemWindows="true"
+    android:background="@color/backgroundColor">
+
+    <!-- Arama Çubuğu -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:src="@android:drawable/ic_menu_search"
+                android:contentDescription="@string/search_icon" />
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@null"
+                android:hint="Eşya adına göre ara..."
+                android:inputType="text"
+                android:imeOptions="actionSearch"
+                android:padding="8dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- RecyclerView: Kendi ilanlarını listelemek için -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMyAds"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cardSearch"
+        android:layout_margin="8dp" />
+
+    <!-- Boş durum için mesaj -->
+    <TextView
+        android:id="@+id/tvEmptyMyAds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/not_create_ad"
+        android:textSize="16sp"
+        android:textColor="@color/textPrimary"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

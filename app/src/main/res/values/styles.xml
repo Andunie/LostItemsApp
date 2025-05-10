@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Durum çubuğu rengi -->
+        <item name="android:statusBarColor">#000000</item>
+        <!-- Durum çubuğu ikonlarının koyu renk olmasını sağla (açık arka planda) -->
+        <item name="android:windowLightStatusBar">false</item>
+        <!-- Durum çubuğunu görünür tut -->
+        <item name="android:windowTranslucentStatus">false</item>
+        <!-- Toolbar için primary renk (isteğe bağlı) -->
+        <item name="colorPrimary">?attr/colorPrimaryVariant</item>
+        <item name="colorPrimaryDark">?attr/colorPrimaryVariant</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        
+        <!-- Aktivite geçiş animasyonları -->
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+    </style>
+
+    <!-- Hata mesajı stili -->
+    <style name="ErrorText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+    </style>
+    
+    <!-- Aktivite Geçiş Animasyonları -->
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+        <item name="android:taskOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:taskOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:taskCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:taskCloseExitAnimation">@anim/slide_out_right</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:taskToFrontExitAnimation">@anim/slide_out_left</item>
+        <item name="android:taskToBackEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:taskToBackExitAnimation">@anim/slide_out_right</item>
+    </style>
+    
+    <!-- Hafif Animasyonlar (Alt Gezinti için) -->
+    <style name="BottomNavAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/fast_fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/fast_fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fast_fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/fast_fade_out</item>
+    </style>
+</resources>

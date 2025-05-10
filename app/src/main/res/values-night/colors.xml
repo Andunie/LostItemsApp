@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema renkleri - Koyu Tema -->
+    <color name="colorPrimary">#5B8AF5</color>
+    <color name="colorPrimaryDark">#3F68C0</color>
+    <color name="colorAccent">#FF80AB</color>
+    
+    <!-- Uygulama renkleri - Koyu Tema -->
+    <color name="colorGray">#757575</color>
+    <color name="backgroundColor">#0F111A</color>
+    <color name="cardBackground">#1A1C25</color>
+    <color name="textPrimary">#E0E0E0</color>
+    <color name="textSecondary">#9E9E9E</color>
+    <color name="selected_item_background">#384277F4</color>
+    <color name="dividerColor">#2D2F3A</color>
+    <color name="iconTint">#B0BEC5</color>
+    <color name="ripple_color">#2E434242</color>
+    
+    <!-- Mesaj Baloncukları Renkleri - Koyu Tema -->
+    <color name="message_sent_bg">#3F51B5</color>
+    <color name="message_received_bg">#1A1C25</color>
+    <color name="message_sent_text">#FFFFFF</color>
+    <color name="message_received_text">#E0E0E0</color>
+</resources> 

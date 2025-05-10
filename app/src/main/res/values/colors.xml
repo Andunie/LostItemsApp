@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Temel renkler -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Tema renkleri - Açık Tema -->
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FF4081</color>
+    
+    <!-- Uygulama renkleri - Açık Tema -->
+    <color name="colorGray">#757575</color>
+    <color name="backgroundColor">#FAFAFA</color>
+    <color name="cardBackground">#FFFFFF</color>
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#757575</color>
+    <color name="selected_item_background">#B0E0E6</color>
+    <color name="dividerColor">#E0E0E0</color>
+    <color name="iconTint">#616161</color>
+    <color name="ripple_color">#B6424141</color>
+    
+    <!-- Mesaj Baloncukları Renkleri - Açık Tema -->
+    <color name="message_sent_bg">#2196F3</color>
+    <color name="message_received_bg">#E8EAF6</color>
+    <color name="message_sent_text">#FFFFFF</color>
+    <color name="message_received_text">#212121</color>
+</resources>

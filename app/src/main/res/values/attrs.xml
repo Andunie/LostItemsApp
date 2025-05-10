@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema ile ilgili özel nitelikler -->
+    <attr name="textPrimary" format="color" />
+    <attr name="textSecondary" format="color" />
+    <attr name="backgroundColor" format="color" />
+    <attr name="cardBackgroundColor" format="color" />
+    <attr name="dividerColor" format="color" />
+    <attr name="iconTintColor" format="color" />
+    
+    <!-- Mesaj baloncukları ile ilgili nitelikler -->
+    <attr name="messageSentBackground" format="color" />
+    <attr name="messageReceivedBackground" format="color" />
+    <attr name="messageSentText" format="color" />
+    <attr name="messageReceivedText" format="color" />
+</resources> 

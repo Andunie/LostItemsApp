@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kayıp Eşya Bul</string>
+    <string name="title_activity_login">Giriş</string>
+    <string name="title_activity_main_menu">Ana Menü</string>
+    <string name="navigation_drawer_open">Gezinme çekmecesini aç</string>
+    <string name="navigation_drawer_close">Gezinme çekmecesini kapat</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Gezinme başlığı</string>
+    <string name="action_settings">Ayarlar</string>
+    
+    <!-- MainActivity -->
+    <string name="welcome">Hoş Geldiniz</string>
+    <string name="login">Giriş Yap</string>
+    <string name="signup">Kayıt Ol</string>
+    
+    <!-- Bottom Navigation -->
+    <string name="menu_lost_items">Kayıp Eşyalar</string>
+    <string name="menu_create_ad">İlan Oluştur</string>
+    <string name="menu_messages">Mesajlar</string>
+    <string name="menu_my_ads">İlanlarım</string>
+    <string name="menu_profile">Profil</string>
+    
+    <!-- Toolbar Titles -->
+    <string name="toolbar_lost_items">Kayıp Eşyalar</string>
+    <string name="toolbar_item_detail">Eşya Detayı</string>
+    <string name="toolbar_create_ad">İlan Oluştur</string>
+    <string name="toolbar_my_ads">İlanlarım</string>
+    <string name="toolbar_profile">Profil</string>
+    <string name="toolbar_messages">Mesajlar</string>
+    <string name="toolbar_my_app">Uygulamam</string>
+
+    
+    <!-- Diğer -->
+    <string name="app_description">Kayıp eşyanızı bulun veya bulduğunuz eşyayı sahibine ulaştırın</string>
+    <string name="chats_2">Sohbet</string>
+    <string name="exit_2">Çıkış</string>
+    <string name="messages_2">Mesajlar</string>
+    <string name="write_message">Mesaj yaz...</string>
+    <string name="selected_address_2">Seçili Addres</string>
+    <string name="item_title_3">Eşya İsmi</string>
+    <string name="description_2">Açıklama</string>
+    <string name="post_ad_2">Eşya İlanı</string>
+    <string name="login_2">Giriş</string>
+    <string name="email_5">Email</string>
+    <string name="password_3">Şifre</string>
+    <string name="login_3">Giriş</string>
+    <string name="lost_item_title_2">Kayıp Eşya İsmi</string>
+    <string name="address_3">Adres</string>
+    <string name="email_6">Email:</string>
+    <string name="harita_y_klenemedi_adres_bulunamad">Harita yüklenemedi: Adres bulunamadı.</string>
+    <string name="not_found_item">Kayıp eşya bulunamadı.</string>
+    <string name="app_logo">Uygulama Logo</string>
+    <string name="not_create_ad">Henüz ilan oluşturmadınız.</string>
+    <string name="profil">Profile</string>
+    <string name="email_7">Email:</string>
+    <string name="loading_2">Yükleniyor...</string>
+    <string name="username_3">Kullanıcı Adı:</string>
+    <string name="loading_3">Yükleniyor...</string>
+    <string name="active_ads_2">Aktif İlanlar:</string>
+    <string name="loading_4">Yükleniyor...</string>
+    <string name="register_3">Kayıt</string>
+    <string name="username_4">Kullanıcı Adı</string>
+    <string name="email_8">Email</string>
+    <string name="password_4">Şifre</string>
+    <string name="register_4">Kayıt</string>
+    <string name="item_title_4">Eşya İsmi</string>
+    <string name="address_4">Adres</string>
+    <string name="toolbar_title_messages">Mesajlar</string>
+</resources>

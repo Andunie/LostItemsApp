@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/> <!-- Bildirim gönderme izni-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32"/> <!-- API 33'den öncesi için -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/> <!-- API 33 ve sonrası için -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- Kamera izni -->
+    
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+
+        <!-- FileProvider -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.myapplication.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBRMN0ipZIA6GMCL59Xkq1HHSs76v55BFs"/>
+
+        <activity
+            android:name=".LostItemsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main_menu"
+            android:theme="@style/Theme.MyApplication.NoActionBar"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateVisible"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.MyApplication"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Yeni eklenen Activity'ler -->
+        <activity android:name=".LostItemDetailActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".CreateAdActivity" android:exported="false" android:windowSoftInputMode="adjustNothing" android:screenOrientation="portrait" />
+        <activity android:name=".MyAdsActivity" android:exported="false" android:windowSoftInputMode="adjustNothing" android:screenOrientation="portrait"/>
+        <activity android:name=".ProfileActivity" android:exported="false" android:windowSoftInputMode="adjustNothing" android:screenOrientation="portrait"/>
+        <activity android:name=".ConversationsActivity" android:exported="false" android:windowSoftInputMode="adjustNothing" android:screenOrientation="portrait"/>
+        <activity android:name=".ChatActivity" android:exported="false"
+            android:windowSoftInputMode="adjustResize" android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

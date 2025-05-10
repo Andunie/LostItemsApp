@@ -1,0 +1,85 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.compose)
+    // Google Services eklentisi
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.myapplication'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.myapplication"
+        minSdk 31
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+        
+        // Gemini API anahtarı
+        buildConfigField "String", "GEMINI_API_KEY", "\"AIzaSyBYxC0LDyQzENMskG5irglAhkr-_P2uJRc\""
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    buildFeatures {
+        compose true
+        viewBinding true
+        buildConfig true
+    }
+}
+
+dependencies {
+    // Firebase BoM (Bill of Materials) için platform tanımı
+    implementation platform('com.google.firebase:firebase-bom:33.10.0')
+
+    // Firebase ürünlerine bağımlılıklar (sürümler BoM tarafından yönetilir)
+    implementation 'com.google.firebase:firebase-firestore'
+    // Analytics opsiyonel, istersen ekleyebilirsin
+    // implementation 'com.google.firebase:firebase-analytics'
+    
+    // Gemini API bağımlılığı
+    implementation 'com.google.ai.client.generativeai:generativeai:0.3.0'
+
+    // Mevcut diğer bağımlılıklar
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation libs.lifecycle.runtime.ktx
+    implementation libs.activity.compose
+    implementation platform(libs.compose.bom)
+    implementation libs.ui
+    implementation libs.ui.graphics
+    implementation libs.ui.tooling.preview
+    implementation libs.material3
+    implementation libs.annotation
+    implementation libs.lifecycle.livedata.ktx
+    implementation libs.lifecycle.viewmodel.ktx
+    implementation libs.navigation.fragment
+    implementation libs.navigation.ui
+    implementation 'com.google.android.material:material:1.11.0' // Material Design (en güncel sürüm)
+    implementation 'com.google.android.gms:play-services-maps:18.2.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'com.google.android.gms:play-services-base:18.5.0'
+    implementation 'androidx.annotation:annotation:1.7.0' // Veya en güncel sürüm
+    implementation 'com.google.firebase:firebase-auth:22.0.0'
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    androidTestImplementation platform(libs.compose.bom)
+    androidTestImplementation libs.ui.test.junit4
+    debugImplementation libs.ui.tooling
+    debugImplementation libs.ui.test.manifest
+}
