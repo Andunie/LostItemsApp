@@ -18,7 +18,7 @@ android {
         versionName "1.0"
         
         // Gemini API anahtarı
-        buildConfigField "String", "GEMINI_API_KEY", "\"AIzaSyBYxC0LDyQzENMskG5irglAhkr-_P2uJRc\""
+        buildConfigField "String", "GEMINI_API_KEY", "\"YourAPIKey\""
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
