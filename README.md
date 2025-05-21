@@ -35,7 +35,7 @@ Android device or emulator (API level 31+)
 📥 **Steps**
 1. Clone the Repository
 bash
-git clone https://github.com/yourusername/lost-found-app.git
+git clone https://github.com/Andunie/lost-found-app.git
 cd lost-found-app
 2. Set Up Firebase
 Create a Firebase project in the Firebase Console
